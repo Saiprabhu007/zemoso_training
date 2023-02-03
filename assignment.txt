@@ -1,1 +1,23 @@
+def search(keyword) :
+   synonymwords=list()
+   for i in Thesaurus:
+      if i.word==keyword:
+         synonymwords=i.synonyms
+   synonymwords.insert(0,keyword)
+   result=list()
+   for word in synonymwords:
+      c=0
+      for i in Corpus:
+        for j in i:
+           if j==word:
+              c=c+1
+      result.append((word,c))
+   return result
+
+   return # modify to return a list of tuples
+
+input = "happy"
+output = search(input) # invoke the method using a test input
+print(output) # prints the output of the function
+# do not remove this line!
 
