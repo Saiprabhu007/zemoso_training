@@ -34,4 +34,8 @@ like given word is happy it occoured 16 times in the corpus , glad is a synonyms
 2)Firstly we have to search the word the in the corpus which is a list of list of Strings , actually it looks like [["sai",prabhu","akhil"."glad"],["sad","angry",dissapointed]]
 where the first list is doc1 and the second list is doc2.
 3)we have to find the words in Thesarus consists of 2 parts 1st string and a list of its synonym words , the 1st keyword is accessed through "word" keyword and the list of synonyms are accessed using "synonym" keyword .
-
+4)the keyword is given in the search function to which we have to search the frequency in the corpus.
+5)firstly we will access each thesarus and check that our desired word is present or not .
+6)after we find the desired word we will copy all the synonym  words into the list "synonymwords and we add the keyword in the list at 0th index.
+7)for each word in synonym , for each document in corpus we will check the word is present or not is yes increment the count value , do this for all the words in the "synonymwords" list.
+8)print the word and its frequeny.
