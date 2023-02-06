@@ -1,4 +1,5 @@
 #this is penn assignment completed
+
 def search(keyword) :
    synonymwords=list()
    for i in Thesaurus:
@@ -15,12 +16,15 @@ def search(keyword) :
       result.append((word,c))
    return result
 
+#below is the code and description about the problem
+
+
    return # modify to return a list of tuples
 
 input = "happy"
 output = search(input) # invoke the method using a test input
 print(output) # prints the output of the function
-# do not remove this line!
+
 
 
 
