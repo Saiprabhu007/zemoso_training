@@ -22,3 +22,7 @@ output = search(input) # invoke the method using a test input
 print(output) # prints the output of the function
 # do not remove this line!
 
+
+
+output:
+[('happy', 16), ('glad', 2), ('pleased', 2), ('delighted', 2), ('joyous', 1)]
