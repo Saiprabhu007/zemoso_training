@@ -30,5 +30,8 @@ output:
 
 
 -----> In this problem we are given a word and we need to count the frequency of that word and the frequency of the synonyms of that word .
-like given word is happy it occoured 16 times in the corpus , glad is a synonyms of the word happy so it occouredn2 times in this way we have to count the frequency of each words.
-2)First i will collect all the synonyms of the given word from the corpus and put them in a list and calculate the frequencies of each word and print the frequencies.
+like given word is happy it occoured 16 times in the corpus , glad is a synonyms of the word happy so it occoured 2 times in this way we have to count the frequency of each words.
+2)Firstly we have to search the word the in the corpus which is a list of list of Strings , actually it looks like [["sai",prabhu","akhil"."glad"],["sad","angry",dissapointed]]
+where the first list is doc1 and the second list is doc2.
+3)we have to find the words in Thesarus consists of 2 parts 1st string and a list of its synonym words , the 1st keyword is accessed through "word" keyword and the list of synonyms are accessed using "synonym" keyword .
+
