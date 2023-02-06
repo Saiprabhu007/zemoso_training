@@ -31,3 +31,4 @@ output:
 
 -----> In this problem we are given a word and we need to count the frequency of that word and the frequency of the synonyms of that word .
 like given word is happy it occoured 16 times in the corpus , glad is a synonyms of the word happy so it occouredn2 times in this way we have to count the frequency of each words.
+2)First i will collect all the synonyms of the given word from the corpus and put them in a list and calculate the frequencies of each word and print the frequencies.
