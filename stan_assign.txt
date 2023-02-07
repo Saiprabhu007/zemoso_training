@@ -1,0 +1,5 @@
+Algorithm for Course-Scheduling:
+
+1)create a graph with courses number as vertices and directed edge (u,v) represents that the course "u" should be completed first before course v.
+2)perform a topological sort on the graph to obtain  a linear ordering of the course numberssuch that all the prerequisites are done
+3)The training plan is the sequence of courses obtained from the topological sort .
