@@ -3,3 +3,69 @@ Algorithm for Course-Scheduling:
 1)create a graph with courses number as vertices and directed edge (u,v) represents that the course "u" should be completed first before course v.
 2)perform a topological sort on the graph to obtain  a linear ordering of the course numberssuch that all the prerequisites are done
 3)The training plan is the sequence of courses obtained from the topological sort .
+
+
+Program for demonstrating the course-scheduling system using topological sorting:
+
+import java.util.*;
+public class CourseScheduling {
+     Stack<Integer> s;
+     int V;
+     ArrayList<Integer>[] adj;
+     boolean[] visited;
+
+
+        CourseScheduling(int V) {
+        this.V = V;
+        adj = new ArrayList[V];
+        visited = new boolean[V];
+        s = new Stack<>();
+        for (int i = 0; i < V; i++) {
+            adj[i] = new ArrayList<>();
+        }
+    }
+
+    void addEdge(int u, int v) {
+        adj[u].add(v);
+    }
+
+    void dfs(int v) {
+        visited[v] = true;
+        for (int i = 0; i < adj[v].size(); i++) {
+            int n = adj[v].get(i);
+            if (!visited[n]) {
+                dfs(n);
+            }
+        }
+        s.push(v);
+    }
+
+    void topologicalSort() {
+        for (int i = 0; i < V; i++) {
+            visited[i] = false;
+        }
+        for (int i = 0; i < V; i++) {
+            if (!visited[i]) {
+                dfs(i);
+            }
+        }
+        while (!s.isEmpty()) {
+            System.out.print(s.pop() + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+         CourseScheduling cs = new  CourseScheduling(8);
+        cs.addEdge(1,0);
+        cs.addEdge(1,3);
+        cs.addEdge(0,3);
+        cs.addEdge(3,2);
+        cs.addEdge(3,4);
+        cs.addEdge(6,3);
+        cs.addEdge(6,5);
+        cs.addEdge(5,4);
+        cs.addEdge(7,5);
+        System.out.println("Topological sort of the given graph: ");
+        cs.topologicalSort();
+    }
+}
