@@ -1,3 +1,7 @@
+
+//three codes were written for the three question's
+
+
 //question-1
 // Refactor the following function into a one-liner:
 // const printName = (name) => {
