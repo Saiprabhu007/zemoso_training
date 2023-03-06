@@ -1,3 +1,5 @@
+
+//this is the code related to function assignment which take another function as an argument
 function square(number) {
     return number * number;
   }
