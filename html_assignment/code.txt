@@ -1,0 +1,234 @@
+code for all the files:
+ code for index.html :
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="navbar">
+          <a href="index.html" style="color: goldenrod;">Home</a>
+          <a href="AboutMe.html">About Me</a>
+          <a href="contact.html">Contact Me</a>
+          <a href="my-gallery.html">My Gallery</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="matter">
+        <h1>Hello Everyone welcome to the website</h1>
+      </div>
+        <div class="container">
+            <img src="office.jpg" style="height: 650px;" alt="image of the office">
+        </div>
+    </main>
+  </body>
+</html>
+
+code for about-me.html :
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <!-- link for css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="navbar">
+          <a href="index.html" class="active">Home</a>
+          <a href="AboutMe.html" style="color:goldenrod;">About Me</a>
+          <a href="contact.html">Contact Me</a>
+          <a href="my-gallery.html">My Gallery</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="img-container">
+        <img src="my-img.jpg" alt="image of saiprabhu" /><br>
+        <div>
+          <p id="intro-heading">
+            This is Saiprabhu  Dandanayak .
+          </p>
+          <p>
+            Hello every this is saiprabhu dandanayak , i am from Adilabad dist , currently i am pursuing 4th year of btech in MVSR ENGINEERING COLLEGE in the stream of Information Technology , i have completed my 10th @ Adilaabd , later i have moved to Hyderabd for my intermediate . My father works as a sr.Asst @ zilla parishat office and my mother is housewife .Apart from studies i am intrested in playing cricket and watching a lot of movies .
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+
+code for contact-me.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+          <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <a href="contact.html" style="color:goldenrod;">Contact Me</a>
+            <a href="my-gallery.html">My Gallery</a>
+          </div>
+        </nav>
+      </header>  
+      <main>
+        <div class="contact-form">
+          <form action="response.html">
+            <label for="name">Your Name</label>
+            <input class="input-name" type="text" name="name" placeholder="Enter your name here" required>
+            <label for="email">Your Email</label>
+            <input type="email" name="email" placeholder="Enter your email here" required>
+            <label for="message">Reason for contacting?</label>
+            <textarea rows="3" placeholder="Type your message here" required></textarea>
+            <input class="button" type="submit" style="width:300px;" value="submit">
+          </form>
+        </div>
+        <div class="contact-details">
+          <h3>Connnect me here 👇</h3>
+          <div class="font-awesome-icons">
+            <div class="font-awesome-icons">
+              <a href="https://www.linkedin.com/in/saiprabhu-dandanayak-b7425622a" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+              <a href="https://github.com/Saiprabhu007/zemoso_training.git" target="_blank"><i class="fa fa-github" style="font-size:36px"></i></a>
+              <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><i class="fa fa-envelope-square" style="font-size:36px"></i></a>
+            </div>
+          </div>
+        </div>
+      </main>     
+</body>
+</html>
+
+
+code for my-gallery.html :
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+          <div class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <a href="Contact.html">Contact Me</a>
+            <a href="my-gallery.html" style="color:goldenrod ;">My Gallery</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="gallery">
+          <figure class="photo1">
+            <img
+              src="home.jpg"
+              alt="Gallery image 1"
+              class="gallery_img"
+            />
+          </figure>
+          <figure class="photo2">
+            <img
+              src="ktm.png"
+              alt="Gallery image 2"
+              class="gallery_img"
+            />
+          </figure>
+          <figure class="photo3">
+            <img
+              src="bmw.jpg"
+              alt="Gallery image 3"
+              class="gallery_img"
+            />
+          </figure>
+          <figure class="photo4">
+            <img
+              src="friends.jpg"
+              alt="Gallery image 4"
+              class="gallery_img"
+            />
+          </figure>
+          <figure class="photo5">
+            <img
+              src="my-img2.jpg"
+              alt="Gallery image 5"
+              class="gallery_img"
+            />
+          </figure>
+          <figure class="phpto6">
+            <img
+              src="temple.jpg"
+              alt="Gallery image 6"
+              class="gallery_img"
+            />
+          </figure>
+        </div>
+      </main> 
+</body>
+</html>
+
+code for response.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+          <div class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="my-gallery.html">My Gallery</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <h1 id="res">
+            Thanks for filling the form , we will contact you soon!
+        </h1>
+      </main>
+      <pre>
+        <h3>   click the below button to go to previous page </h3>
+      </pre>
+      <div class="back">
+        <a href="contact.html"><img src="click_here.jpeg" alt="click here image"> </a>
+      </div>
+</body>
+</html>
+
