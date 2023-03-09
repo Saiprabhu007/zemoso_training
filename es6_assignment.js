@@ -1,6 +1,6 @@
 //question-1
 
-
+//hello
 
 // Refactor the following function into a one-liner:
 // const printName = (name) => {
@@ -22,7 +22,7 @@ const printBill = (name, bill) => {
            }
 */
 
-//code for question2
+//code for question2  using string template 
 const printBill =(name,bill)=>{
      return `hi ${name} , please pay: ${bill}`
 }
@@ -35,7 +35,7 @@ const printBill =(name,bill)=>{
 /*Modify the following code such that the object properties are destructured and logged.
 
 
-//code for question-3
+//code for question-3 using destructuring the objects
 const person = {
                       name: “saiprabhu”,
                       age: 21
