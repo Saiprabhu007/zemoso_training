@@ -1,3 +1,5 @@
+
+// in this code i have used promises to hande asynchronous code, which return the resolved reason
 function getData(uId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
