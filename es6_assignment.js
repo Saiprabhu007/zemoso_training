@@ -1,4 +1,7 @@
 //question-1
+
+
+
 // Refactor the following function into a one-liner:
 // const printName = (name) => {
 //     return “Hi” + name;
@@ -8,6 +11,9 @@
 //this is the one linear for the above arrow function
 const printName=name=> `hi ${name}`;
 
+
+
+
 //question-2
 /*
 Rewrite the following code using template literals
@@ -15,12 +21,21 @@ const printBill = (name, bill) => {
                      return “Hi “ + name + “, please pay: “ + bill;
            }
 */
+
+//code for question2
 const printBill =(name,bill)=>{
      return `hi ${name} , please pay: ${bill}`
 }
 
+
+
+
+
 // question-3
 /*Modify the following code such that the object properties are destructured and logged.
+
+
+//code for question-3
 const person = {
                       name: “saiprabhu”,
                       age: 21
