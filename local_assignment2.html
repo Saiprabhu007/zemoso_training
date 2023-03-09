@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Score App</title>
-</head>
-<body>
-  <h1>Score App</h1>
-  <p>Local Score: <span id="local-score">0</span></p>
-  <p>Session Score: <span id="session-score">0</span></p>
-  <button onclick="incrementScores()">Increment Scores</button>
-  <button onclick="resetScores()">Reset Scores</button>
+  <head>
+    <title>Score Counter</title>
+  </head>
+  <body>
+    <h1>Score Counter</h1>
+    <p>Local Score: <span id="local-score">0</span></p>
+    <p>Session Score: <span id="session-score">0</span></p>
+    <button onclick="incrementScores()">Increment Scores</button>
+    <button onclick="resetScores()">Reset Scores</button>
 
-  <script>
+    <script>
+      if (localStorage.getItem("localScor") == null)
+        localStorage.setItem("localScor", 0);
+      let localScore = localStorage.getItem("localScor");
+      document.getElementById("local-score").textContent = localScore;
 
-    let localScore = parseInt(localStorage.getItem('localScor')) || 0;
-    document.getElementById('local-score').textContent = localScore;
+      if (sessionStorage.getItem("sessionScor") == null) {
+        sessionStorage.setItem("sessionScor", 0);
+      }
+      let sessionScore = parseInt(sessionStorage.getItem("sessionScor"));
+      document.getElementById("session-score").textContent = sessionScore;
 
-    let sessionScore = parseInt(sessionStorage.getItem('sessionScor')) || 0;
-    document.getElementById('session-score').textContent = sessionScore;
+      function incrementScores() {
+        localScore++;
+        sessionScore++;
+        sessionStorage.setItem("sessionScor", sessionScore);
+        localStorage.setItem("localScor", localScore);
+        document.getElementById("local-score").textContent = localScore;
+        document.getElementById("session-score").textContent = sessionScore;
+      }
 
-    
-    function incrementScores() {
-      localScore++;
-      sessionScore++;
-      sessionStorage.setItem('sessionScor', sessionScore);
-      localStorage.setItem('localScor', localScore);
-      document.getElementById('local-score').textContent = localScore;
-      document.getElementById('session-score').textContent = sessionScore;
-    }
-
-
-    function resetScores() {
-      localStorage.setItem('localScor', 0);
-      sessionStorage.setItem('sessionScor', 0);
-      localScore = 0;
-      sessionScore = 0;
-      document.getElementById('local-score').textContent = localScore;
-      document.getElementById('session-score').textContent = sessionScore;
-    }
-  </script>
-</body>
+      function resetScores() {
+        localStorage.setItem("localScor", 0);
+        sessionStorage.setItem("sessionScor", 0);
+        localScore = 0;
+        sessionScore = 0;
+        document.getElementById("local-score").textContent = localScore;
+        document.getElementById("session-score").textContent = sessionScore;
+      }
+    </script>
+  </body>
 </html>
+
