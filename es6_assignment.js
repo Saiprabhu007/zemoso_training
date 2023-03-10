@@ -2,6 +2,9 @@
 //es-6 assignment
 
 //question-1
+
+//hello
+
 // Refactor the following function into a one-liner:
 // const printName = (name) => {
 //     return “Hi” + name;
@@ -12,7 +15,7 @@
 const printName=name=> `hi ${name}`;
 
 
-
+//just like as arrow function with one parameter so () also not needed
 
 
 //question-2
@@ -23,15 +26,24 @@ const printBill = (name, bill) => {
            }
 */
 
+
 //code for question-2
+//code for question2  using string template , it uses back-ticks
 const printBill =(name,bill)=>{
      return `hi ${name} , please pay: ${bill}`
 }
 
 
 
+
+
+
+
 // question-3
 /*Modify the following code such that the object properties are destructured and logged.
+
+
+//code for question-3 using destructuring the objects
 const person = {
                       name: “saiprabhu”,
                       age: 21
