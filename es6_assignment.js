@@ -11,7 +11,7 @@
 //this is the one linear for the above arrow function
 const printName=name=> `hi ${name}`;
 
-
+//just like as arrow function with one parameter so () also not needed 
 
 
 //question-2
@@ -22,7 +22,7 @@ const printBill = (name, bill) => {
            }
 */
 
-//code for question2  using string template 
+//code for question2  using string template , it uses back-ticks
 const printBill =(name,bill)=>{
      return `hi ${name} , please pay: ${bill}`
 }
